@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="UCommerce.MasterClass.MasterPages.Main" %>
+
+<%@ Register TagPrefix="uc" TagName="CategoryNavigation" Src="../UserControls/CategoryNavigation.ascx" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="~/MasterClass/Css/bootstrap-3.3.6-dist/css/Styles.css" rel="stylesheet" />
+    <link href="~/MasterClass/Css/ucommerce.bootstrap.css" rel="stylesheet">
+    <link href="~/MasterClass/Css/ucommerce.bootstrap-responsive.css" rel="stylesheet">
+    <link href="~/MasterClass/Css/ucommerce.masterclass.css" rel="stylesheet">
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="nav-collapse">
+                            <ul class="nav">
+                                <li>
+                                    <a class="home" href="/frontpage">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-collapse pull-right">
+                            <ul class="nav">
+                                <li>
+                                    <a href="/basket"><i class="icon-shopping-cart icon-white"></i>Basket</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+                    <uc:categorynavigation id="UCCategoryNavigation" runat="server" />
+                </div>
+                <div class="span9">
+                    <asp:ContentPlaceHolder runat="server" ID="MainContentPlaceholder"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
