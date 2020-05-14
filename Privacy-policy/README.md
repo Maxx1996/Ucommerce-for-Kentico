@@ -1,1 +1,0 @@
-Privacy Policy Link:-    https://drive.google.com/file/d/1CRHqR9zvQsw0qpSJBkSOI8grlWD4J-tv/view?usp=sharing
